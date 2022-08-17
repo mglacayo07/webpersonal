@@ -13,10 +13,7 @@ html_base = """
 
 
 def home(request):
-    return HttpResponse(html_base + """
-        <h2>Portada</h2
-    """)
-
+    return render(request, "core/home.html")
 
 def about(request):
     return HttpResponse(html_base + """
